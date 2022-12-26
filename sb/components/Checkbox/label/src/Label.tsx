@@ -75,7 +75,7 @@ const LogoLabel: React.FC<Props> = ({
             flexWrap,
             display
         }}
-            numberOfLines={wordWrap ? 0 : 1}
+            numberOfLines={wordWrap ? 0 : 0}
             key={ID} >
             {text || children}
         </Text>
