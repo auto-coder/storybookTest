@@ -12,7 +12,8 @@
     "prestart": "yarn update-stories",
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=dbd3aa0aa7b4"
   },
   "dependencies": {
     "@logo-rn/logo-button-paper": "^0.1.0",
