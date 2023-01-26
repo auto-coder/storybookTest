@@ -1,0 +1,122 @@
+{
+  "name": "@logo-rn/logo-percent-edit",
+  "version": "0.1.0",
+  "description": "<LogoPercentEdit/> allows user to enter and edit text with type of percentage.",
+  "files": [
+    "src",
+    "index.ts"
+  ],
+  "scripts": {
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "git-commit": "git add -A . && git commit . -m '('$npm_package_name'): upgrading to v.'$npm_package_version && git tag $npm_package_name@$npm_package_version",
+    "pub": "npm publish --access public"
+  },
+  "keywords": [
+    "Logo Elements",
+    "Logo",
+    "Elements",
+    "LEDS",
+    "web-components",
+    "web-component",
+    "web compoonent",
+    "web",
+    "component",
+    "polymer",
+    "percent-edit"
+  ],
+  "repository": "http://elements.logo.com.tr",
+  "author": "Emine İzmir <emine.izmir@logo.com.tr> (http://elements.logo.com.tr)",
+  "license": "See license in LICENSE file",
+  "homepage": "http://elements.logo.com.tr",
+  "dependencies": {
+    "@logo-rn/shared-utils": "^0.1.14",
+    "react-native-paper": "5.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@react-native-community/eslint-config": "^3.0.2",
+    "@release-it/conventional-changelog": "^5.0.0",
+    "@types/jest": "^28.1.2",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "0.68.0",
+    "commitlint": "^17.0.2",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "pod-install": "^0.1.0",
+    "prettier": "^2.0.5",
+    "react": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-builder-bob": "^0.18.3",
+    "release-it": "^15.0.0",
+    "typescript": "^4.5.2"
+  },
+  "resolutions": {
+    "@types/react": "17.0.21"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules",
+      "<rootDir>/lib/"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@babel/eslint-parser",
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}
